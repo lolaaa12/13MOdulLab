@@ -1,9 +1,83 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 YaBrowser/25.10.0.0 Safari/537.36" version="29.2.3">
   <diagram name="Страница-1" id="Qk8SJYqedhQYUIFIKeAO">
-    <mxGraphModel>
+    <mxGraphModel dx="628" dy="636" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="gEMW02_NIXWd6I3DEH8R-1" parent="1" style="ellipse;fillColor=strokeColor;" value="" vertex="1">
+          <mxGeometry height="14" width="14" x="385" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="gEMW02_NIXWd6I3DEH8R-2" parent="1" style="rounded=1;arcSize=20;strokeWidth=2" value="Idle" vertex="1">
+          <mxGeometry height="40" width="43" x="371" y="124" as="geometry" />
+        </mxCell>
+        <mxCell id="gEMW02_NIXWd6I3DEH8R-3" parent="1" style="rounded=1;arcSize=20;strokeWidth=2" value="RoomSelected" vertex="1">
+          <mxGeometry height="40" width="117" x="334" y="238" as="geometry" />
+        </mxCell>
+        <mxCell id="gEMW02_NIXWd6I3DEH8R-4" parent="1" style="rounded=1;arcSize=20;strokeWidth=2" value="BookingConfirmed" vertex="1">
+          <mxGeometry height="40" width="146" x="224" y="376" as="geometry" />
+        </mxCell>
+        <mxCell id="gEMW02_NIXWd6I3DEH8R-5" parent="1" style="rounded=1;arcSize=20;strokeWidth=2" value="BookingCancelled" vertex="1">
+          <mxGeometry height="40" width="142" x="393" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="gEMW02_NIXWd6I3DEH8R-6" parent="1" style="rounded=1;arcSize=20;strokeWidth=2" value="Paid" vertex="1">
+          <mxGeometry height="40" width="46" x="210" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="gEMW02_NIXWd6I3DEH8R-7" parent="1" style="ellipse;shape=endState;fillColor=strokeColor;" value="" vertex="1">
+          <mxGeometry height="14" width="14" x="385" y="604" as="geometry" />
+        </mxCell>
+        <mxCell id="gEMW02_NIXWd6I3DEH8R-8" edge="1" parent="1" source="gEMW02_NIXWd6I3DEH8R-1" style="curved=1;startArrow=none;;exitX=0.52;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="gEMW02_NIXWd6I3DEH8R-2" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gEMW02_NIXWd6I3DEH8R-9" edge="1" parent="1" source="gEMW02_NIXWd6I3DEH8R-2" style="curved=1;startArrow=none;;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="gEMW02_NIXWd6I3DEH8R-3" value="Выбор номера">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gEMW02_NIXWd6I3DEH8R-10" edge="1" parent="1" source="gEMW02_NIXWd6I3DEH8R-3" style="curved=1;startArrow=none;;exitX=0.26;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="gEMW02_NIXWd6I3DEH8R-4" value="Подтверждение бронирования">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="297" y="327" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gEMW02_NIXWd6I3DEH8R-11" edge="1" parent="1" source="gEMW02_NIXWd6I3DEH8R-3" style="curved=1;startArrow=none;;exitX=0.8;exitY=1;entryX=0.63;entryY=0;rounded=0;" target="gEMW02_NIXWd6I3DEH8R-5" value="Отмена бронирования">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="516" y="327" />
+              <mxPoint x="516" y="453" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gEMW02_NIXWd6I3DEH8R-12" edge="1" parent="1" source="gEMW02_NIXWd6I3DEH8R-4" style="curved=1;startArrow=none;;exitX=0.35;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="gEMW02_NIXWd6I3DEH8R-6" value="Оплата">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="233" y="453" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gEMW02_NIXWd6I3DEH8R-13" edge="1" parent="1" source="gEMW02_NIXWd6I3DEH8R-4" style="curved=1;startArrow=none;;exitX=0.67;exitY=1;entryX=0.27;entryY=0;rounded=0;" target="gEMW02_NIXWd6I3DEH8R-5" value="Отмена бронирования">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="369" y="453" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gEMW02_NIXWd6I3DEH8R-14" edge="1" parent="1" source="gEMW02_NIXWd6I3DEH8R-6" style="curved=1;startArrow=none;;exitX=0.5;exitY=1;entryX=0.02;entryY=0.36;rounded=0;" target="gEMW02_NIXWd6I3DEH8R-7" value="Завершение бронирования">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="233" y="567" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gEMW02_NIXWd6I3DEH8R-15" edge="1" parent="1" source="gEMW02_NIXWd6I3DEH8R-5" style="curved=1;startArrow=none;;exitX=0.5;exitY=1;entryX=1.02;entryY=0.19;rounded=0;" target="gEMW02_NIXWd6I3DEH8R-7" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="464" y="567" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
